@@ -39,8 +39,8 @@ Together, FinMate + FinGuard form a complete safety and budgeting layer.
 
 ## 🚀 Live Demo Links
 
-- **FinMate Live:** (Add your link)
-- **FinGuard Live:** (Add your link)
+- **FinMate Live:** https://finmate-pocket-points.lovable.app
+- **FinGuard Live:** https://upi-fraud-prevention-9sd3.bolt.host/
 - **YouTube Demo (2–3 mins):** (Add your video link)
 
 ---
@@ -63,16 +63,16 @@ Together, FinMate + FinGuard form a complete safety and budgeting layer.
   - UI/UX flow for pockets, payments, transfers, analytics  
   - Prompt engineering & Lovable integration  
 
-- **Team Leader (Name)**  
+- **Team Leader Saanvi Goyal
   - Built FinGuard scam-detection module  
   - UPI/QR safety logic & UI  
   - Bolt integration  
 
-- **Member 3 (Name)**  
+- **Member 3 Riddhi Mittal
   - UX research, user flow, feature ideas  
   - Testing both modules  
 
-- **Member 4 (Name)**  
+- **Member 4 Palak Goyal
   - Scam detection research, flow logic  
   - Assisted with GitHub, commits, screenshots  
 
