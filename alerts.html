@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Community Fraud Alerts - Report and view UPI fraud cases reported by the community" />
+    <meta name="keywords" content="UPI fraud alerts, report fraud, community safety" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Community Alerts - Finverse</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-bar-left">
+            <span>Protect yourself from UPI fraud</span>
+          </div>
+          <div class="top-bar-right">
+            <span class="email">support@finverse.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>Finverse</h1>
+          </div>
+          <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="alerts.html" class="nav-link active">Community Alerts</a>
+            <a href="about.html" class="nav-link">About</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h2 class="hero-title">Community Fraud Alerts</h2>
+            <p class="hero-subtitle">Help protect others by reporting suspicious UPI IDs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="report-section">
+        <div class="container">
+          <div class="report-card">
+            <h3 class="section-title">Report Suspicious UPI ID</h3>
+            <p class="section-description">If you've encountered a fraudulent UPI ID, report it here to help protect the community</p>
+
+            <form id="reportForm" class="report-form">
+              <div class="form-group">
+                <label for="reportUpiId" class="form-label">UPI ID</label>
+                <input
+                  type="text"
+                  id="reportUpiId"
+                  class="form-input"
+                  placeholder="Enter suspicious UPI ID"
+                  required
+                  pattern=".+@.+"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="reportReason" class="form-label">Reason for Report</label>
+                <textarea
+                  id="reportReason"
+                  class="form-textarea"
+                  placeholder="Describe why you're reporting this UPI ID..."
+                  required
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="reportEmail" class="form-label">Your Email (Optional)</label>
+                <input
+                  type="email"
+                  id="reportEmail"
+                  class="form-input"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">Submit Report</button>
+              <div id="reportMessage" class="form-message"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="alerts-list-section">
+        <div class="container">
+          <h3 class="section-title">Recent Community Alerts</h3>
+          <p class="section-description">Stay informed about recently reported fraudulent UPI IDs</p>
+
+          <div id="alertsList" class="alerts-list">
+            <div class="loading-message">Loading alerts...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Finverse</h4>
+            <p>Your trusted partner in UPI fraud prevention</p>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>support@finverse.com</p>
+          </div>
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <p>&copy; 2025 Finverse. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/alerts.js"></script>
+  </body>
+</html>

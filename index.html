@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Finverse - UPI Fraud Detection and Prevention System. Check UPI IDs for suspicious activity, fake domains, and community-reported fraud." />
+    <meta name="keywords" content="UPI fraud, fraud detection, UPI security, payment safety, scam prevention, finverse" />
+    <meta name="author" content="Finverse" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Finverse - UPI Fraud Detection & Prevention</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-content">
+          <div class="top-bar-left">
+            <span>Protect yourself from UPI fraud</span>
+          </div>
+          <div class="top-bar-right">
+            <span class="email">support@finverse.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo">
+            <h1>Finverse</h1>
+          </div>
+          <nav class="nav">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="alerts.html" class="nav-link">Community Alerts</a>
+            <a href="about.html" class="nav-link">About</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h2 class="hero-title">Protect Yourself from UPI Fraud</h2>
+            <p class="hero-subtitle">Verify UPI IDs instantly and stay safe from scammers</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="check-section">
+        <div class="container">
+          <div class="check-card">
+            <h3 class="section-title">Check UPI ID</h3>
+            <p class="section-description">Enter a UPI ID to verify its authenticity and check for suspicious activity</p>
+
+            <form id="upiCheckForm" class="upi-form">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="upiInput"
+                  class="upi-input"
+                  placeholder="Enter UPI ID (e.g., user@paytm)"
+                  required
+                  pattern=".+@.+"
+                />
+                <button type="submit" class="btn btn-primary">Check Now</button>
+              </div>
+              <div id="errorMessage" class="error-message"></div>
+            </form>
+
+            <div id="loadingSpinner" class="loading" style="display: none;">
+              <div class="spinner"></div>
+              <p>Analyzing UPI ID...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="history-section">
+        <div class="container">
+          <h3 class="section-title">Recent Checks</h3>
+          <div id="recentChecks" class="recent-checks">
+            <div class="loading-message">Loading recent checks...</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section">
+        <div class="container">
+          <h3 class="section-title">How We Protect You</h3>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">🔍</div>
+              <h4>Domain Validation</h4>
+              <p>Instantly validates UPI domains to ensure legitimacy</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">⚠️</div>
+              <h4>Fake Domain Detection</h4>
+              <p>Identifies spoofed domains like ok-sbi, support-paytm, gpay-care</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">🕐</div>
+              <h4>Suspicious Handle Detection</h4>
+              <p>Flags recently created or suspicious UPI handles</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">👥</div>
+              <h4>Community Reports</h4>
+              <p>Access fraud reports from other users</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Finverse</h4>
+            <p>Your trusted partner in UPI fraud prevention</p>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>support@finverse.com</p>
+          </div>
+          <div class="footer-section">
+            <h4>Legal</h4>
+            <p>&copy; 2025 Finverse. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
